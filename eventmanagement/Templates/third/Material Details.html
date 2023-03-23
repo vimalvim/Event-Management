@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "third/thome.html" %}
+{% load static %}
+{% block content %}
+<head>
+<title>Material Registration Form</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Event Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="{% static 'tmaterialdetails/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'tmaterialdetails/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- banner -->
+	<div class="center-container">
+		<div class="main">
+			<h1 class="w3layouts_head">MATERIAL FORM</h1>
+				<div class="w3layouts_main_grid">
+					<form action="#" method="post" class="w3_form_post">
+						{% csrf_token %}
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Supplier Name </label>
+								<input type="text" name="name" placeholder="Supplier Name" required="">
+							</span>
+						</div>
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Your Email </label>-->
+<!--								<input type="text" name="email" placeholder="Your Email" required="">-->
+<!--							</span>-->
+<!--&lt;!&ndash;						</div>&ndash;&gt;-->
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Phone Number </label>-->
+<!--								<input type="text" name="Task" placeholder="Phone Number" required="">-->
+<!--								</span>-->
+<!--						</div>-->
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Event Tables </label>
+								<select name="table" style="width:71%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Round table">Round table</option>
+									<option value="Rectangular table">Rectangular table</option>
+									<option value="Conference table">Conference table</option>
+									<option value="High-top table">High-top table</option>
+									<option value="Head table">Head table</option>
+									<option value="Buffet table">Buffet table</option>
+								</select>
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Projectors </label>
+								<select name="projector" style="width:71%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="LCD Projectors">LCD Projectors</option>
+									<option value="DLP Projectors">DLP Projectors</option>
+									<option value="LED Projectors">LED Projectors</option>
+									<option value="Wireless Projectors">Wireless Projectors</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity1" placeholder="" required="">
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Mikes </label>
+								<select name="mike" style="width:71%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Handheld mikes">Handheld mikes</option>
+									<option value="Lavalier mikes">Lavalier mikes</option>
+									<option value="Headset mikes">Headset mikes</option>
+									<option value="Wireless mikes">Wireless mikes</option>
+									<option value="Boundary mikes">Boundary mikes</option>
+									<option value="Shotgun mikes">Shotgun mikes</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity2" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Tv </label>
+								<select name="Tv" style="width:71%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="LED TV">LED TV</option>
+									<option value="LCD TV">LCD TV</option>
+									<option value="OLED TV">OLED TV</option>
+									<option value="Smart TV">Smart TV</option>
+									<option value="Outdoor TV">Outdoor TV</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity3" placeholder="" required="">
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Air Conditions </label>
+								<select name="conditions" style="width:71%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="AC">AC</option>
+									<option value="NON-AC">Split-AC</option>
+									<option value="Fan">Fan</option>
+									<option value="Air-Cooler">Air-Cooler</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity4" placeholder="" required="">
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>LED lights </label>
+								<select name="led" style="width:71%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Uplights">Uplights</option>
+									<option value="wash lights">wash lights</option>
+									<option value="Spotlights">Spotlights</option>
+									<option value="String lights">String lights</option>
+									<option value="Patterned lights">Patterned lights</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity5" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+<!--						<div class="agileits_w3layouts_main_grid w3ls_main_grid">-->
+<!--							<span class="agileinfo_grid">-->
+<!--								<label>Date / Time </label>-->
+<!--								<div class="agileits_w3layouts_main_gridl">-->
+<!--									<input class="date" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">-->
+<!--								</div>-->
+<!--								<div class="agileits_w3layouts_main_gridr">-->
+<!--									<input type="time" name="Time" placeholder=" " required="">-->
+<!--								</div>-->
+<!--									<div class="clear"> </div>-->
+<!--							</span>-->
+<!--						</div>-->
+
+
+<!--					<div class="content-w3ls">-->
+<!--						<div class="form-w3ls">-->
+<!--							<div class="content-wthree2">-->
+<!--								<div class="grid-w3layouts1">-->
+<!--									<div class="w3-agile1">-->
+<!--										<label>Please choose your favourite food</label>-->
+<!--										<ul>-->
+<!--											<li>-->
+<!--												<input type="radio" id="a-option" name="selector1">-->
+<!--												<label for="a-option">Veg </label>-->
+<!--												<div class="check"></div>-->
+<!--											</li>-->
+<!--											<li>-->
+<!--												<input type="radio" id="b-option" name="selector1">-->
+<!--												<label for="b-option">Non-veg</label>-->
+<!--												<div class="check"><div class="inside"></div></div>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>	-->
+<!--								</div>-->
+<!--								<div class="clear"></div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="form-w3ls-1">-->
+<!--							<div class="grid-w3layouts1">-->
+<!--								<div class="w3-agile1">-->
+<!--									<label>Please choose your favourite drink</label>-->
+<!--										<ul>-->
+<!--											<li>-->
+<!--												<input type="radio" id="d-option" name="selector2">-->
+<!--												<label for="d-option">Wine</label>-->
+<!--												<div class="check"></div>-->
+<!--											</li>-->
+<!--											<li>-->
+<!--												<input type="radio" id="e-option" name="selector2">-->
+<!--												<label for="e-option">Whisky</label>-->
+<!--												<div class="check"><div class="inside"></div></div>-->
+<!--											</li>-->
+<!--											<li>-->
+<!--												<input type="radio" id="f-option" name="selector2">-->
+<!--												<label for="f-option">beer </label>-->
+<!--												<div class="check"><div class="inside"></div></div>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--								</div>	-->
+<!--							</div>		-->
+<!--						</div>-->
+<!--						<div class="clear"></div>-->
+<!--					</div>-->
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Value</label>
+								<input type="text" name="value" placeholder="Total Amount" required="">
+							</span>
+						</div>
+
+					<div class="w3_main_grid">
+						<div class="w3_main_grid_right">
+							<input type="submit" value="Submit" style="margin-left:40%;">
+						</div>
+					</div>
+				</form>
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+		</div>
+	</div>
+<!-- //footer -->
+</body>
+{% endblock %}
+</html>

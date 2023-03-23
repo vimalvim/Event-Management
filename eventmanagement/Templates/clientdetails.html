@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "home1.html" %}
+{% load static %}
+{% block content %}
+<head>
+<title>CLIENT DETAILS</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Auditions Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="{% static 'client/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'client/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+</head>
+<body>
+<!-- banner -->
+	<div class="center-container">
+	<div class="banner-dott">
+		<div class="main">
+			<h1 class="w3layouts_head">EVENT MANAGEMENT REGISTRATION FORM</h1>
+				<div class="w3layouts_main_grid">
+					<form action="/Cdetails/" method="post" class="w3_form_post">
+						{% csrf_token %}
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label> Your Name </label>
+								<input type="text" name="firstname" placeholder="Name" required="">
+							</span>
+						</div>
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Last Name </label>-->
+<!--								<input type="text" name="lastname" placeholder="Last Name" required="">-->
+<!--							</span>-->
+<!--						</div>-->
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Your Email </label>
+								<input type="text" name="email" placeholder="Your Email" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Phone Number </label>
+								<input type="text" name="phonenumber" placeholder="Phone Number" required="">
+								</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Address </label>
+								<input type="text" name="address" placeholder="Address" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>City </label>
+								<input type="text" name="city" placeholder="City" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Country </label>
+								<input type="text" name="country" placeholder="Country" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Select Event Type </label>
+								<select name="Events" style="width:68%;">
+									<option value="" selected="" disabled="">Select Events</option>
+									<option value="Marriage">Marriage</option>
+									<option value="Birthday">Birthday</option>
+									<option value="Anniversary">Anniversary</option>
+									<option value="Get Together">Get Together</option>
+									<option value="Business Meetings">Business Meetings</option>
+									<option value="Seminar">Seminar</option>
+									<option value="Sports">Sports</option>
+									<option value="Exhibitions">Exhibitions</option>
+									<option value="Product Launch">Product Launch</option>
+									<option value="Others">Others</option>
+								</select>
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Specialized </label>
+								<select name="Specialized" style="width:68%;">
+									<option value="" selected="" disabled="">Select Events</option>
+									<option value="Marriage">Marriage</option>
+									<option value="Birthday">Birthday</option>
+									<option value="Anniversary">Anniversary</option>
+									<option value="Get Together">Get Together</option>
+									<option value="Business Meetings">Business Meetings</option>
+									<option value="Seminar">Seminar</option>
+									<option value="Sports">Sports</option>
+									<option value="Exhibitions">Exhibitions</option>
+									<option value="Product Launch">Product Launch</option>
+									<option value="Others">Others</option>
+								</select>
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Drinks </label>
+								<select name="drinks" style="width:68%;">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Cool Drinks">Cool Drinks</option>
+									<option value="No">No</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Beverages </label>
+								<input type="text" name="beverages" placeholder="Enter your drink here!" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Banquet </label>
+								<select name="banquet" style="width:68%;">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Design Banquet">Design Banquet</option>
+									<option value="Plain Banquet">Plain Banquet</option>
+									<option value="Grass Banquet">Grass Banquet</option>
+									<option value="No">No</option>
+								</select>
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Stage Decoration </label>
+								<select name="Decoration" style="width:68%;">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Original Flowers">Original Flowers</option>
+									<option value="Plastic Flowers">Plastic Flowers</option>
+									<option value="Stage Skirtings">Stage Skirtings</option>
+									<option value="Plain Stagecarpets">Plain Stagecarpets</option>
+									<option value="No need stage Decorations">No need stage Decorations</option>
+								</select>
+							</span>
+						</div>
+
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Food</label>
+								<select name="food" style="width:68%;">
+									<option value="" selected="" disabled="">Select food</option>
+									<option value="Veg">Veg</option>
+									<option value="Non-veg">Non-veg</option>
+									<option value="Veg & Non-veg">Veg & Non-veg</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Food Service</label>
+								<select name="service" style="width:68%;">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="person Service">person Service</option>
+									<option value="Self Service">Self Service</option>
+									<option value="Buffet">Buffet</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Number of Attendees </label>
+								<input type="text" name="attendees" placeholder="" required="">
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Budget </label>
+								<input type="text" name="Budget" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="agileits_w3layouts_main_grid w3ls_main_grid">
+							<span class="agileinfo_grid">
+								<label>Date / Time </label>
+								<div class="agileits_w3layouts_main_gridl">
+									<input class="date" id="date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+								</div>
+								<div class="agileits_w3layouts_main_gridr">
+									<input type="time" name="Time" placeholder=" " required="">
+								</div>
+									<div class="clear"> </div>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Your message </label>
+<!--								<input type="text" name="message" placeholder="" required="">-->
+								<textarea name="message" row="50" column="100"></textarea>
+							</span>
+						</div>
+
+					
+					<div class="w3_main_grid">
+						<div class="w3_main_grid_right">
+							<input type="submit" value="Submit" style="margin-left:270px;">
+						</div>
+					</div>
+				</form>
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+<!--			<div class="w3layouts_copy_right">-->
+<!--				<div class="container">-->
+<!--					<p>© 2017 Auditions Registration Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>-->
+<!--				</div>-->
+<!--			</div>-->
+		</div>
+	</div>
+	</div>
+<!-- //footer -->
+</body>
+{% endblock %}
+</html>

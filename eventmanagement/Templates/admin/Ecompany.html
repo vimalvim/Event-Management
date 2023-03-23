@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+{% extends "admin/ahome.html" %}
+{% load static %}
+{% block content %}
+
+  <head>
+  	<title>EVENT COMPANY DETAILS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{% static 'Ecompany/css/style.css' %}">
+
+	</head>
+	<body>
+	<script>
+{% for m in messages %}
+      alert('{{ m }}');
+{% endfor %}
+</script>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">EVENT MANAGEMENT COMPANY DETAILS</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table">
+						  <thead class="thead-primary">
+						    <tr>
+						      <th>Name</th>
+						      <th>Address</th>
+						      <th>Services</th>
+								<th>Specialized</th>
+								<th>Experience</th>
+						      <th>Employees</th>
+						      <th>Budget</th>
+								<th>Number</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						   {% for d in da %}
+						  <tr>
+							  <td>{{d.name}}</td>
+							  <td>{{d.address}}</td>
+							  <td>{{d.services}}</td>
+							  <td>{{d.specialized}}</td>
+							  <td>{{d.experience}}</td>
+							  <td>{{d.employees}}</td>
+							  <td>{{d.budget}}</td>
+							   <td>{{d.number}}</td>
+
+
+							  {% endfor %}
+
+						  </tr>
+
+
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="{% static 'Ecompany/js/jquery.min.js' %}"></script>
+  <script src="{% static 'Ecompany/js/popper.js' %}"></script>
+  <script src="{% static 'Ecompany/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'Ecompany/js/main.js' %}"></script>
+
+	</body>
+{% endblock %}
+</html>
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "third/thome.html" %}
+{% load static %}
+{% block content %}
+<head>
+<title>Material Registration Form</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Event Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="{% static 'tmaterialdetails/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'tmaterialdetails/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- banner -->
+	<div class="center-container">
+		<div class="main">
+			<h1 class="w3layouts_head">INTERIOR MATERIAL FORM</h1>
+				<div class="w3layouts_main_grid">
+					<form action="#" method="post" class="w3_form_post">
+						{% csrf_token %}
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Supplier Name </label>
+								<input type="text" name="name" placeholder="Supplier Name" required="">
+							</span>
+						</div>
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Your Email </label>-->
+<!--								<input type="text" name="email" placeholder="Your Email" required="">-->
+<!--							</span>-->
+<!--&lt;!&ndash;						</div>&ndash;&gt;-->
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Phone Number </label>-->
+<!--								<input type="text" name="Task" placeholder="Phone Number" required="">-->
+<!--								</span>-->
+<!--						</div>-->
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Interior Boards </label>
+								<select name="boards" style="width:68%">
+									<option value="none" selected="" disabled="">Select Boards</option>
+									<option value="Moisture Resistant Board">Moisture Resistant Board</option>
+									<option value="Medium density fiberboard">Medium density fiberboard</option>
+									<option value="High density moisture board">High density moisture board</option>
+									<option value="High density fiberboard">High density fiberboard</option>
+									<option value="Particle board">Particle board</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Interior Woods  </label>
+								<select name="woods" style="width:68%">
+									<option value="none" selected="" disabled="">Select Woods</option>
+									<option value="Plain Wood">Plain Wood</option>
+									<option value="Ply Wood">Ply Wood</option>
+									<option value="Commercial plywood">Commercial plywood</option>
+									<option value="Boiling Waterproo">Boiling Waterproof plywood</option>
+									<option value="Lacquer">Lacquer wood</option>
+									<option value="Stained Wood">Stained Wood</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity1" placeholder="" required="">
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Interior Tables </label>
+								<select name="Tables" style="width:68%">
+									<option value="none" selected="" disabled="">Select Tables</option>
+									<option value="Laminated tables">Laminated tables</option>
+									<option value="wood table">wood table</option>
+									<option value="Glass table">Glass table</option>
+									<option value="Synthetic table">Synthetic table </option>
+									<option value="Metal table">Metal table</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity2" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Interior Designs </label>
+								<select name="Designs" style="width:68%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="color">color</option>
+									<option value="Texture">Texture</option>
+									<option value="Pattern">Pattern</option>
+									<option value="Lightning">Lightning</option>
+									<option value="Contrast">Contrast</option>
+									<option value="Emphasis">Emphasis</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity3" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Wallpaper </label>
+								<select name="wallpapers" style="width:68%">
+									<option value="none" selected="" disabled="">Select Type</option>
+									<option value="Coloured walls">Coloured walls</option>
+									<option value="Decorative wallpaper">Decorative wallpaper</option>
+									<option value="Wood veneer wallpaper">Wood veneer wallpaper</option>
+									<option value="cork wallpaper">cork wallpaper</option>
+									<option value="fabric wallpaper">fabric wallpaper</option>
+									<option value="Vinyl stickers">Vinyl stickers</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity4" placeholder="" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Others </label>
+								<select name="others" style="width:68%">
+									<option value="none" selected="" disabled="">Select products</option>
+									<option value="Mirrors">Mirrors</option>
+									<option value="Laminates">Laminates</option>
+									<option value="Acrylic">Acrylic</option>
+									<option value="Veneer">Veneer</option>
+									<option value="Glass">Glass</option>
+									<option value="Metal">Metal</option>
+									<option value="No">No</option>
+
+								</select>
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Quantity</label>
+								<input type="text" name="quantity5" placeholder="" required="">
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Value</label>
+								<input type="text" name="value" placeholder="Total Amount" required="">
+							</span>
+						</div>
+
+
+					<div class="w3_main_grid">
+						<div class="w3_main_grid_right">
+							<input type="submit" value="Submit" style="margin-left:40%;">
+						</div>
+					</div>
+				</form>
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+		</div>
+	</div>
+<!-- //footer -->
+</body>
+{% endblock %}
+</html>

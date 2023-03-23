@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "fourth/fhome.html" %}
+{% load static %}
+{% block content %}
+<head>
+<title>COMPANY DETAILS</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Flat Register Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!--css-->
+<link href="{% static 'company/css/style.css' %}" rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="{% static 'company/css/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<!--css-->
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Cuprum&subset=latin-ext" rel="stylesheet">
+<!--//fonts-->
+</head>
+<body>
+	<h1 style="margin-left:150px; margin-top:100px;">Event Management Company</h1>
+	<div class="main-agile" style="margin-left:500px;">
+		<div class="content-wthree" >
+			<form action="#" method="post">
+				{% csrf_token %}
+				<div class="w3l-forming">
+					<input type="text"  name="name" placeholder="Company Name" required="">
+				</div>
+				<div class="w3l-forming">
+					<input type="text"  name="address" placeholder="Company Address" required="">
+				</div>
+				<div class="w3l-forming">
+					<input type="text"  name="services" placeholder="Services Offered" required="">
+				</div>
+
+				<div class="w3l-forming">
+					<input type="text"  name="specialized" placeholder="We are specialized in!" required="">
+				</div>
+
+
+				<div class="w3l-forming">
+					<input type="text"  name="experience" placeholder="Years of Experience" required="">
+				</div>
+
+				<div class="w3l-forming">
+					<input type="text"  name="employees" placeholder="No of employees" required="">
+				</div>
+
+				<div class="w3l-forming">
+					<input type="text" name="budget" placeholder="budget" required="">
+				</div>
+
+				<div class="w3l-forming">
+					<input type="text" name="number" placeholder="Company Phone Number" required="">
+				</div>
+
+				<input type="submit" value="Register">
+			</form>
+		</div>
+	</div>
+</body>
+{% endblock %}
+</html>

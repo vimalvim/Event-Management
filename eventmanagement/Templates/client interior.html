@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "home1.html" %}
+{% load static %}
+{% block content %}
+<head>
+<title>CLIENT DETAILS</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Auditions Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="{% static 'client/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'client/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+</head>
+<body>
+<!-- banner -->
+	<div class="center-container">
+	<div class="banner-dott">
+		<div class="main">
+			<h1 class="w3layouts_head">INTERIOR DESIGN REGISTRATION FORM</h1>
+				<div class="w3layouts_main_grid">
+					<form action="#" method="post" class="w3_form_post">
+						{% csrf_token %}
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label> Your Name </label>
+								<input type="text" name="firstname" placeholder="Name" required="">
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Your Email </label>
+								<input type="text" name="email" placeholder="Your Email" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Phone Number </label>
+								<input type="text" name="phonenumber" placeholder="Phone Number" required="">
+								</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Address </label>
+								<input type="text" name="address" placeholder="Address" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>City </label>
+								<input type="text" name="city" placeholder="City" required="">
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Country </label>
+								<input type="text" name="country" placeholder="Country" required="">
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Select Area </label>
+								<select name="area" style="width:68%;">
+									<option value="" selected="" disabled="">Select location</option>
+									<option value="Living Room">Living Room</option>
+									<option value="Bedroom">Bedroom</option>
+									<option value="Kitchen">Kitchen</option>
+									<option value="Dining room">Dining room</option>
+									<option value="Kids room">Kids room</option>
+									<option value="Others">Others</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Structure </label>
+								<select name="structure" style="width:68%;">
+									<option value="" selected="" disabled="">Select Type</option>
+									<option value="Box Object">Box Object</option>
+									<option value="Column Round">Column Round</option>
+									<option value="square">square</option>
+									<option value="None">None</option>
+								</select>
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Ventilation </label>
+								<select name="ventilation" style="width:68%;">
+									<option value="" selected="" disabled="">Select Type</option>
+									<option value="Air Vent">Air Vent</option>
+									<option value="None">None</option>
+								</select>
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Windows </label>
+								<select name="windows" style="width:68%;">
+									<option value="" selected="" disabled="">Select Type</option>
+									<option value="Single window">Single window</option>
+									<option value="Double window">Double window</option>
+									<option value="Non-opening window">Non-opening window</option>
+									<option value="Roof window">Roof window</option>
+									<option value="None">None</option>
+								</select>
+							</span>
+						</div>
+
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Walls </label>
+								<select name="walls" style="width:68%;">
+									<option value="" selected="" disabled="">Select Type</option>
+									<option value="paint">paint</option>
+									<option value="concrete">concrete</option>
+									<option value="wallpaper">wallpaper</option>
+									<option value="tiles">tiles</option>
+									<option value="wallpanels">wallpanels</option>
+								</select>
+							</span>
+						</div>
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Floors </label>
+								<select name="floor" style="width:68%;">
+									<option value="" selected="" disabled="">Select Type</option>
+									<option value="Tile">Tile</option>
+									<option value="Hardwood">Hardwood</option>
+									<option value="Marbles">Marbles</option>
+									<option value="Carpet Flooring">Carpet Flooring</option>
+									<option value="Semi Flooring">Semi Flooring</option>
+									<option value="Color Flooring">Color Flooring</option>
+									<option value="None">None</option>
+								</select>
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Square feet </label>
+								<input type="text" name="feet" placeholder="ft" required="">
+							</span>
+						</div>
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>BUDGET </label>
+								<input type="text" name="budget" placeholder="Amount" required="">
+							</span>
+						</div>
+
+
+
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Your message </label>
+								<textarea name="message" row="50" column="100" placeholder="Enter Your Message Here! "></textarea>
+							</span>
+						</div>
+
+
+					<div class="w3_main_grid">
+						<div class="w3_main_grid_right">
+							<input type="submit" value="Submit" style="margin-left:250px;">
+						</div>
+					</div>
+				</form>
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+<!--			<div class="w3layouts_copy_right">-->
+<!--				<div class="container">-->
+<!--					<p>© 2017 Auditions Registration Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>-->
+<!--				</div>-->
+<!--			</div>-->
+		</div>
+	</div>
+	</div>
+<!-- //footer -->
+</body>
+{% endblock %}
+</html>

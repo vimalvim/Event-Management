@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+	<style>
+			/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 1px;
+  font-size: 1.1rem;
+  color: white;
+  background: #13BD85;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 6px 30px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+	</style>
+<title>Login</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Flat Looking Forms Widget a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<!-- Meta tag Keywords -->
+<link rel="stylesheet" href="{% static 'register/css/style.css' %}" type="text/css" media="all" /> <!-- Style-CSS -->
+<link rel="stylesheet" href="{% static 'register/css/font-awesome.min.css' %}"><!--fontawesome-css-->
+<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<script>
+{% for m in messages %}
+      alert('{{ m }}');
+{% endfor %}
+</script>
+
+<section class="main-w3ls" >
+		<div class="header-w3ls" >
+			<h1>Login Page</h1>
+		</div>
+		<div class="top-header-w3ls" style="margin-top:50px; margin-left:600px;">
+		<div class="headerleft-w3ls">
+				<div class="login-w3ls">
+					<h2>login</h2>
+				</div>
+			<form action="/Login/" method="post">
+				{% csrf_token %}
+				<div class="email-w3ls">
+<!--					<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>-->
+					<input type="email" name="email" placeholder="email" required="">
+				</div>
+				<div class="hpassword-w3ls">
+<!--					<span><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>-->
+					<input type="password" name="password" placeholder="password" required="">
+				</div>
+				<input type="submit" value="login">
+<!--				<div class="forgot-w3ls">-->
+<!--					<p><a href="#">forgot password?</a></p>-->
+<!--				</div>-->
+			</form>
+			<a href="/Register/">
+					<button class="button-82-pushable" role="button" style="margin-left:35px;">
+
+						  <span class="button-82-front text">
+							Register
+						  </span>
+						</button>
+			</a>
+
+			<a href="/">
+					<button class="button-82-pushable" role="button">
+
+						  <span class="button-82-front text">
+							Home
+						  </span>
+						</button>
+			</a>
+
+			<div class="clear"></div>
+		</div>
+
+<!--		<div class="headerright-w3ls">-->
+<!--			<div class="register-w3ls">-->
+<!--				<h3>register</h3>-->
+<!--			</div>-->
+<!--			<form action="#" method="post">-->
+<!--				<div class="name-w3ls">-->
+<!--					<span><i class="fa fa-user" aria-hidden="true"></i></span>-->
+<!--					<input type="text" name="uname" placeholder="name" required="">-->
+<!--				</div>-->
+<!--				<div class="mail-w3ls">-->
+<!--					<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>-->
+<!--					<input type="email" name="email" placeholder="email" required="">-->
+<!--				</div>-->
+<!--				<div class="password-w3ls">-->
+<!--					<span><i class="fa fa-unlock" aria-hidden="true"></i></span>-->
+<!--					<input type="password" name="password" placeholder="password" required="">-->
+<!--				</div>-->
+<!--				<div class="cpassword-w3ls">-->
+<!--					<span><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>-->
+<!--					<input type="password" name="password" placeholder="confirm password" required="">-->
+<!--				</div>-->
+<!--				<div class="signup-w3ls">-->
+<!--					<input type="submit" value="sign up">-->
+<!--				</div>-->
+<!--			</form>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--		<div class="clear"></div>-->
+<!--</section>-->
+</body>
+</html>

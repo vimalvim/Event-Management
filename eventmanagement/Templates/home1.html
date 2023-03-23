@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<html>
+{% load static %}
+<head>
+<title>Diving Centre a Sports Category Flat Bootstrap Responsive Website Template | Home :: w3layouts<</title>
+<!---css--->
+<link href="{% static 'home1/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'home1/css/style.css' %}" rel='stylesheet' type='text/css' />
+<!---css--->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Diving Centre Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!---js--->
+<script src="{% static 'home1/js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'home1/js/bootstrap.js' %}"></script>
+<!---js--->
+<!---fonts-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
+<!---fonts-->
+<link href="{% static 'home1/css/owl.carousel.css' %}" rel="stylesheet">
+<script src="{% static 'home1/js/owl.carousel.js' %}"></script>
+	<script>
+		$(document).ready(function() {
+		$("#owl-demo").owlCarousel({
+			items : 1,
+			lazyLoad : true,
+			autoPlay : true,
+			navigation : false,
+			navigationText :  false,
+			pagination : true,
+		});
+		});
+	</script>
+<!---slider--->
+</head>
+<body>
+<script>
+{% for m in messages %}
+      alert('{{ m }}');
+{% endfor %}
+</script>
+
+	<!---header--->
+		<div class="header-section">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+			<!---Brand and toggle get grouped for better mobile display--->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+<!--							<div class="navbar-brand">-->
+<!--								<h1><a href="index.html">Diving Centre</a></h1>-->
+<!--							</div>-->
+						</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="/home1/">Home <span class="sr-only">(current)</span></a></li>
+								<li><a href="/Cdetails/">Event Management</a></li>
+								<li><a href="/Cinteriordetails/">Interior Decorator</a></li>
+<!--									<li class="dropdown">-->
+<!--									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client Details <span class="caret"></span></a>-->
+<!--										<ul class="dropdown-menu">-->
+<!--											<li><a href="/Cdetails/">Event Management</a></li>-->
+<!--											<li><a href="/Cinteriordetails/">Interior Decorator</a></li>-->
+
+<!--								</ul>-->
+<!--									</li>-->
+								<li><a href="/Logout/">Logout</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!---header--->
+		<!--bannerslider-->
+				<div class="header-banner">
+					<div class="container">{% block content %}
+						{% endblock %}
+
+					</div>
+				</div>
+				<!--bannerslider-->
+
+
+
+
+
+
+
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--{% load static %}-->
+
+<!--<head>-->
+
+<!--  <meta charset="utf-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+<!--  <title></title>-->
+
+<!--  &lt;!&ndash; google fonts &ndash;&gt;-->
+<!--  <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">-->
+
+<!--  &lt;!&ndash; Template CSS &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="{% static 'home1/css/style-starter.css' %}">-->
+<!--<style>-->
+<!--   .feat-show {-->
+<!--   display: none;-->
+<!--   position: absolute;-->
+<!--   z-index: 1;-->
+<!--   background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);-->
+<!--   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);-->
+<!--}-->
+
+<!--.feat-show li {-->
+<!--   float: none;-->
+<!--}-->
+
+<!--.feat-show a {-->
+<!--   display: block;-->
+<!--   color: #333;-->
+<!--   padding: 12px 16px;-->
+<!--   text-decoration: none;-->
+<!--   text-align: left;-->
+<!--}-->
+
+<!--li:hover .feat-show {-->
+<!--   display: block;-->
+<!--}-->
+
+<!--</style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<script>-->
+<!--{% for m in messages %}-->
+<!--      alert('{{ m }}');-->
+<!--{% endfor %}-->
+<!--</script>-->
+<!--&lt;!&ndash; header &ndash;&gt;-->
+<!--<header>-->
+<!--  <div class="w3l-header" id="home">-->
+<!--    <div class="container">-->
+<!--      <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0">-->
+<!--&lt;!&ndash;        <a class="navbar-brand m-0" href="index.html"><span class="fa fa-gamepad"></span>  </a>&ndash;&gt;-->
+<!--        &lt;!&ndash; if logo is image enable this-->
+<!--            <a class="navbar-brand" href="#index.html">-->
+<!--                <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />-->
+<!--            </a> &ndash;&gt;-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"-->
+<!--          aria-label="Toggle navigation">-->
+<!--          <span class="navbar-toggler-icon fa fa-bars"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--          <ul class="navbar-nav ml-auto">-->
+<!--            <li class="nav-item active mr-lg-4">-->
+<!--              <a class="nav-link pl-0 pr-0" href="/home1/">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--&lt;!&ndash;              <li><a href="#">Client Details&ndash;&gt;-->
+<!--&lt;!&ndash;            <span class="nav-link dropdown-toggle"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;         </a>&ndash;&gt;-->
+<!--&lt;!&ndash;         <ul class="dropdown-item text-center scroll">&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><a href="/Cdetails/">Event Management</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><a href="//">Interior Decorator</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <li><a href="/donor_reg/">Liver Details</a></li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <li><a href="/donor_reg/">Lungs Details</a></li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <li><a href="/donor_reg/">Kidney Details</a></li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;         </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--&lt;!&ndash;              	<li class="nav-item dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"&ndash;&gt;-->
+<!--&lt;!&ndash;							    aria-expanded="false"> Client Details </a>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <div class="nav-item dropdown" aria-labelledby="navbarDropdown">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="/Cdetails/">Event Management</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="/Cinteriordetails/">Interior Decorator</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--            -->
+<!--&lt;!&ndash;            <li class="nav-item mr-lg-4">&ndash;&gt;-->
+
+<!--&lt;!&ndash;              <a class="nav-link pl-0 pr-0" href="/Cdetails/">Client details</a>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--            <li class="nav-item mr-lg-4">-->
+<!--              <a class="nav-link pl-0 pr-0" href="services.html">Services</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item">-->
+<!--              <a class="nav-link pl-0 pr-0" href="/Logout/">Logout</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </nav>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</header>-->
+<!--&lt;!&ndash; //header &ndash;&gt;-->
+<!--&lt;!&ndash;  Main banner section &ndash;&gt;-->
+<!--<section class="w3l-main-banner">-->
+<!--  <div class="banner-view">-->
+
+<!--    <div class="banner-info container">-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div id='stars'></div>-->
+<!--  <div id='stars2'></div>-->
+<!--  <div id='stars3'></div>-->
+<!--</section>-->
+<!--&lt;!&ndash;  //Main banner section &ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //w3l-content-photo-5 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<section class="w3l-services-block-3">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="features-main pb-5 pt-0 text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container pb-lg-3">&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="row features">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-lg-4 col-md-6 feature-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a href="#url">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="feature-body service1">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="fa fa-bar-chart" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-info mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="feature-titel mb-2">Web Design</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam, minima iste molestiae.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-lg-4 col-md-6 feature-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a href="#url">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="feature-body service2">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="fa fa-laptop icon-fea" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-info mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="feature-titel mb-2">Mobile Apps</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam, minima iste molestiae.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-lg-4 col-md-6 feature-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a href="#url">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="feature-body service3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="fa fa-codepen" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-info mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="feature-titel mb-2">Animation Design</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam, minima iste molestiae.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="hover">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-lg-4 col-md-6 feature-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a href="#url">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="feature-body service4">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="fa fa-modx" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-info mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="feature-titel mb-2">Photoshop Media</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam, minima iste molestiae.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-lg-4 col-md-6 feature-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a href="#url">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="feature-body service5">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="fa fa-signal icon-fea" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-info mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="feature-titel mb-2">Marketing Business</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam, minima iste molestiae.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-lg-4 col-md-6 feature-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a href="#url">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="feature-body service6">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="fa fa-paint-brush icon-fea" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-info mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="feature-titel mb-2">Development</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam, minima iste molestiae.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; gallery-7 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<section class="w3l-gallery-7">&ndash;&gt;-->
+<!--&lt;!&ndash;	<div class="gallery-7_sur py-5">&ndash;&gt;-->
+<!--&lt;!&ndash;		<div class="container py-lg-5">&ndash;&gt;-->
+<!--&lt;!&ndash;			<div id="container">&ndash;&gt;-->
+<!--&lt;!&ndash;				<div class="galleryContainer">&ndash;&gt;-->
+<!--&lt;!&ndash;					<div class="gallery">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="radio" name="controls" id="c1" checked><img class="galleryImage img-fluid" id="i1" src="assets/images/g1.jpg" class="img"&ndash;&gt;-->
+<!--&lt;!&ndash;							alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="radio" name="controls" id="c2"><img class="galleryImage img-fluid" id="i2" src="assets/images/g2.jpg" class="img" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="radio" name="controls" id="c3"><img class="galleryImage img-fluid" id="i3" src="assets/images/g3.jpg" class="img" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="radio" name="controls" id="c4"><img class="galleryImage img-fluid" id="i4" src="assets/images/g4.jpg" class="img" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="radio" name="controls" id="c5"><img class="galleryImage img-fluid" id="i5" src="assets/images/g5.jpg" class="img" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="radio" name="controls" id="c6"><img class="galleryImage img-fluid" id="i6" src="assets/images/g6.jpg" class="img" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;					</div>&ndash;&gt;-->
+<!--&lt;!&ndash;					<div class="thumbnails">&ndash;&gt;-->
+<!--&lt;!&ndash;						<label class="thumbnailImage" for="c1"><img src="assets/images/g1.jpg" class="img img-fluid" alt=""></label>&ndash;&gt;-->
+<!--&lt;!&ndash;						<label class="thumbnailImage" for="c2"><img src="assets/images/g2.jpg" class="img img-fluid" alt=""></label>&ndash;&gt;-->
+<!--&lt;!&ndash;						<label class="thumbnailImage" for="c3"><img src="assets/images/g3.jpg" class="img img-fluid" alt=""></label>&ndash;&gt;-->
+<!--&lt;!&ndash;						<label class="thumbnailImage" for="c4"><img src="assets/images/g4.jpg" class="img img-fluid" alt=""></label>&ndash;&gt;-->
+<!--&lt;!&ndash;						<label class="thumbnailImage" for="c5"><img src="assets/images/g5.jpg" class="img img-fluid" alt=""></label>&ndash;&gt;-->
+<!--&lt;!&ndash;						<label class="thumbnailImage" for="c6"><img src="assets/images/g6.jpg" class="img img-fluid" alt=""></label>&ndash;&gt;-->
+
+<!--&lt;!&ndash;					</div>&ndash;&gt;-->
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--&lt;!&ndash;			</div>&ndash;&gt;-->
+<!--&lt;!&ndash;		</div>&ndash;&gt;-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //gallery-7 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; iphone home block &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<section class="w3l-blog py-5 text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container py-lg-5">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="img-block">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#img">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/images/frame-mac.png" class="img-fluid" alt="image" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3>Passionate designer & developer who loves simplicity.</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h5 class="mt-3">Fusce fringilla tincidunt laoreet volutpat cras varius sit suscipit.</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="mt-4 mb-0"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam totam id dolorem, nobis aperiam vero&ndash;&gt;-->
+<!--&lt;!&ndash;                    reprehenderit quae explicabo fugiat modi eius quos voluptatum ratione dolorum placeat aliquid rerum, at sapiente provident&ndash;&gt;-->
+<!--&lt;!&ndash;                    consequuntur. Vero sed hic omnis, odit in ipsam facilis beatae, assumenda dolore necessitatibus sequi?</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="blog1.html" class="btn-style btn-primary btn mt-lg-5 mt-4">View my project</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; <div class="col-lg-3 col-6 pl-md-3 pl-2 mt-lg-0 mt-md-5 mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="img-block">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#img">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/images/p2.jpg" class="img-fluid" alt="image" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //iphone home block &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; testimonial &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<section class="w3l-quote-main" id="client">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="quote py-5">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-lg-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-9">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h4>" There are many variations of passages of Lorem Ipsum available, randomised words which don't look even slightly believable.&ndash;&gt;-->
+<!--&lt;!&ndash;                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sed dignissimos explicabo facilis incidunt maiores eos "</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-3 mt-lg-0 mt-3 text-lg-center tablet-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="assets/images/client1.jpg" alt="" class="img-fluid" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h6 class="mb-0 mt-lg-3">christopher robin</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h5 class="mt-1">- UI/UX Designer </h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //testimonial &ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; home page blog&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<section class="w3l-blog py-5">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container py-lg-5 py-md-3">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-5">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3>I'm Available For Freelance Projects.</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h5 class="mt-3">Imagination is more important than knowledge </h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="mt-4"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore minima doloribus provident, quia, ipsam totam&ndash;&gt;-->
+<!--&lt;!&ndash;                    veniam iste ea temporibus non consequatur tenetur? Velit officiis laborum molestias ratione impedit, totam, praesentium a nulla&ndash;&gt;-->
+<!--&lt;!&ndash;                    fuga aliquam repellendus facilis consequuntur corrupti cum delectus, quia maiores accusamus animi obcaecati vel ipsum.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-7 mt-lg-0 mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="img-block">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="single.html">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/images/g3.jpg" class="img-fluid" alt="image" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>A collection of Creative Website Design</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="img-block mt-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="single.html"> <img src="assets/images/g2.jpg" class="img-fluid" alt="image" />&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>Personalized Portfolio work</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //home page blog&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; freelance hire me &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<section class="w3l-grid-quote py-5">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container py-lg-3">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h6>I'am available for freelance projects.</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;        <h3>Let's work together indeed!</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a href="contact.html" class="btn-style btn-primary btn">Get quotes</a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a href="contact.html" class="btn btn-style btn-light ml-2">Hire me</a>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //freelance hire me &ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Footer &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<footer>&ndash;&gt;-->
+<!--&lt;!&ndash;  <section class="w3l-footers-1">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="footer py-3">&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="footer-content">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-8 footer-left">&ndash;&gt;-->
+<!--&lt;!&ndash;              <p class="m-0">&copy; 2020 Eccentric Portfolio. All Rights Reserved | Design by <a href="https://w3layouts.com">W3layouts</a></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <ul class="social m-0 p-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                <li><a href="#facebook"><span class="fa fa-facebook"></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li><a href="#linkedin"><span class="fa fa-linkedin"></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li><a href="#instagram"><span class="fa fa-instagram"></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li><a href="#twitter"><span class="fa fa-twitter"></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </section>&ndash;&gt;-->
+<!--&lt;!&ndash;</footer>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //Footer &ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash; move top &ndash;&gt;-->
+<!--<button onclick="topFunction()" id="movetop" class="editContent" title="Go to top">-->
+<!--  <span class="fa fa-angle-up"></span>-->
+<!--</button>-->
+<!--<script>-->
+<!--  // When the user scrolls down 20px from the top of the document, show the button-->
+<!--  window.onscroll = function () {-->
+<!--    scrollFunction()-->
+<!--  };-->
+
+<!--  function scrollFunction() {-->
+<!--    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {-->
+<!--      document.getElementById("movetop").style.display = "block";-->
+<!--    } else {-->
+<!--      document.getElementById("movetop").style.display = "none";-->
+<!--    }-->
+<!--  }-->
+
+<!--  // When the user clicks on the button, scroll to the top of the document-->
+<!--  function topFunction() {-->
+<!--    document.body.scrollTop = 0;-->
+<!--    document.documentElement.scrollTop = 0;-->
+<!--  }-->
+<!--</script>-->
+<!--&lt;!&ndash; /move top &ndash;&gt;-->
+
+<!--&lt;!&ndash; common jquery &ndash;&gt;-->
+<!--<script src="assets/js/jquery-3.3.1.min.js"></script>-->
+<!--&lt;!&ndash; //common jquery &ndash;&gt;-->
+
+<!--&lt;!&ndash; disable body scroll which navbar is in active &ndash;&gt;-->
+<!--<script>-->
+<!--  $(function () {-->
+<!--    $('.navbar-toggler').click(function () {-->
+<!--      $('body').toggleClass('noscroll');-->
+<!--    })-->
+<!--  });-->
+<!--</script>-->
+<!--&lt;!&ndash; disable body scroll which navbar is in active &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; for blog carousel slider &ndash;&gt;-->
+<!--<script src="assets/js/owl.carousel.js"></script>-->
+<!--<script>-->
+<!--  $(document).ready(function () {-->
+<!--    var owl = $('.owl-carousel');-->
+<!--    owl.owlCarousel({-->
+<!--      stagePadding: 20,-->
+<!--      margin: 15,-->
+<!--      nav: false,-->
+<!--      loop: false,-->
+<!--      responsive: {-->
+<!--        0: {-->
+<!--          items: 1-->
+<!--        },-->
+<!--        600: {-->
+<!--          items: 2-->
+<!--        },-->
+<!--        1000: {-->
+<!--          items: 3-->
+<!--        }-->
+<!--      }-->
+<!--    })-->
+<!--  })-->
+<!--</script>-->
+<!--&lt;!&ndash; //for blog carousel slider &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; stats number counter&ndash;&gt;-->
+<!--<script src="assets/js/jquery.waypoints.min.js"></script>-->
+<!--<script src="assets/js/jquery.countup.js"></script>-->
+<!--<script>-->
+<!--  $('.counter').countUp();-->
+<!--</script>-->
+<!--&lt;!&ndash; //stats number counter &ndash;&gt;-->
+
+<!--&lt;!&ndash; jQuery-Photo-filter-lightbox-portfolio-plugin &ndash;&gt;-->
+<!--<script src="assets/js/jquery-1.7.2.js"></script>-->
+<!--<script src="assets/js/jquery.quicksand.js"></script>-->
+<!--<script src="assets/js/script.js"></script>-->
+<!--<script src="assets/js/jquery.prettyPhoto.js"></script>-->
+<!--&lt;!&ndash; //jQuery-Photo-filter-lightbox-portfolio-plugin &ndash;&gt;-->
+
+<!--&lt;!&ndash;  bootstrap js &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash;  //bootstrap js &ndash;&gt;-->
+
+<!--</body>-->
+
+<!--&lt;!&ndash;</html>&ndash;&gt;-->

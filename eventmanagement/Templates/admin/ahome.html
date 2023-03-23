@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+<title>Admin Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Events Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'ahome/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static 'ahome/css/style.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static 'ahome/css/font-awesome.css' %}" rel="stylesheet">		<!-- font-awesome icons -->
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="{% static 'ahome/js/jquery-2.2.3.min.js' %}"></script>
+<!-- //js -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<script>
+{% for m in messages %}
+      alert('{{ m }}');
+{% endfor %}
+</script>
+	<!-- banner -->
+	<div id="home" class="w3ls-banner">
+
+		<!-- banner-text -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-top">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+<!--									<h3 style="margin-top:-150px;">We Celebrate  <span>All Parties</span></h3>-->
+									{% block content %}
+                                     {% endblock %}
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+
+			<!--banner Slider starts Here-->
+		</div>
+
+
+
+	</div>
+	<!-- //banner -->
+			<!-- header -->
+		<div class="header-w3layouts">
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="hvr-sweep-to-right" href="/Adminhome/">Home</a></li>
+
+							<li><a class="hvr-sweep-to-right" href="/viewclientdetails/">Event details</a></li>
+
+							<li><a class="hvr-sweep-to-right" href="/viewInteriordetails/">Interior details</a></li>
+
+							<li><a class="hvr-sweep-to-right" href="/viewEventmaterials/">Event Material</a></li>
+
+							<li><a class="hvr-sweep-to-right" href="/viewInteriormaterials/">Interior Material</a></li>
+
+							<li><a class="hvr-sweep-to-right" href="/Eventcompanydetails/">Event Company</a></li>
+
+							<li><a class="hvr-sweep-to-right" href="/Interiorcompanydetails/">Interior Company</a></li>
+
+
+							<li><a class="hvr-sweep-to-right" href="/Alogout/">Logout</a></li>
+						</ul>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="zxx">-->
+<!--{% load static %}-->
+
+<!--<head>-->
+<!--    <title>ADMIN HOMEPAGE</title>-->
+<!--    &lt;!&ndash; Meta tag Keywords &ndash;&gt;-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <meta name="keywords" content="Norm Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />-->
+<!--    <script>-->
+<!--        addEventListener("load", function() {-->
+<!--            setTimeout(hideURLbar, 0);-->
+<!--        }, false);-->
+
+<!--        function hideURLbar() {-->
+<!--            window.scrollTo(0, 1);-->
+<!--        }-->
+
+<!--    </script>-->
+<!--    &lt;!&ndash; //Meta tag Keywords &ndash;&gt;-->
+<!--    &lt;!&ndash; Custom-Files &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="{% static 'ahome/css/bootstrap.css' %}">-->
+<!--    &lt;!&ndash; Bootstrap-Core-CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="{% static 'ahome/css/style.css' %}" type="text/css" media="all" />-->
+<!--    &lt;!&ndash; Style-CSS &ndash;&gt;-->
+<!--    &lt;!&ndash; font-awesome-icons &ndash;&gt;-->
+<!--    <link href="{% static 'ahome/css/font-awesome.css' %}" rel="stylesheet">-->
+<!--    &lt;!&ndash; //font-awesome-icons &ndash;&gt;-->
+<!--    &lt;!&ndash; /Fonts &ndash;&gt;-->
+<!--    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">-->
+<!--    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">-->
+<!--    &lt;!&ndash; //Fonts &ndash;&gt;-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<script>-->
+<!--{% for m in messages %}-->
+<!--      alert('{{ m }}');-->
+<!--{% endfor %}-->
+<!--</script>-->
+<!--    &lt;!&ndash; mian-content &ndash;&gt;-->
+<!--    <div class="main-content" id="home">-->
+<!--        &lt;!&ndash; header &ndash;&gt;-->
+<!--        <header class="header">-->
+<!--            <div class="container">-->
+<!--                &lt;!&ndash; nav &ndash;&gt;-->
+<!--                <nav class="py-2">-->
+<!--                    <div id="logo">-->
+
+<!--                    <label for="drop" class="toggle">Menu</label>-->
+<!--                    <input type="checkbox" id="drop" />-->
+<!--                    <ul class="menu">-->
+<!--                        <li class="active"><a href="/Adminhome/">Home</a></li>-->
+
+<!--                        <li><a href="/viewclientdetails/">Event details</a></li>-->
+
+<!--                         <li><a href="/viewInteriordetails/">Interior details</a></li>-->
+
+<!--                        <li><a href="/Alogout/">Logout</a>-->
+
+<!--                        </li>-->
+
+<!--                    </ul>-->
+<!--                </nav>-->
+<!--                &lt;!&ndash; //nav &ndash;&gt;-->
+<!--            </div>-->
+<!--        </header>-->
+<!--        &lt;!&ndash; //header &ndash;&gt;-->
+
+<!--        <div class="banner-w3pvt-info ">-->
+
+<!--            <div class="overlay-w3ls">-->
+<!--
+<!--
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+<!--    &lt;!&ndash; //banner &ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; banner-bottom &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="about py-5" id="about">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-md-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row about-w3pvt-top mt-2">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="col-lg-6 about-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="images/img2.jpg" class="img-fluid" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--    &lt;!&ndash; //banner-bottom&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; services &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="services py-5" id="service">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-md-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row service_lavitop mt-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-4 ser-img mt-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="images/img3.jpg" class="img-fluid" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-8 ser-lt pl-lg-5">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h4 class="title-w3ls mb-5">Lorem ipsum dolor sit magna feugiat etiam sed dolor</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row ser-sec-1 mt-1">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col-lg-6 ser-w3ls-gd p-lg-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="d-flex services-box one">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-lightbulb-o"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Icon ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="service-content">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h5>Inagittis Lacg</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p class="serp">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Quisque sagittis lacus eu lorem sodalesd enean adipiscing.&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Service-content ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            &lt;!&ndash; .Services-box ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col-lg-6 ser-w3ls-gd p-lg-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="d-flex services-box two">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-laptop"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Icon ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="service-content">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h5>Inagittis Lacg</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p class="serp">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Quisque sagittis lacus eu lorem sodalesd enean adipiscing.&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Service-content ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            &lt;!&ndash; .Services-box ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row ser-sec-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col-lg-6 ser-w3ls-gd p-lg-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="d-flex services-box three">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-diamond"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Icon ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="service-content">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h5>Inagittis Lacg</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p class="serp">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Quisque sagittis lacus eu lorem sodalesd enean adipiscing.&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Service-content ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            &lt;!&ndash; .Services-box ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col-lg-6 ser-w3ls-gd p-lg-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="d-flex services-box four">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-shield"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Icon ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="service-content">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h5>Inagittis Lacg</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p class="serp">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Quisque sagittis lacus eu lorem sodalesd enean adipiscing.&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; .Service-content ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            &lt;!&ndash; .Services-box ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; .Row ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; .Container ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; .Services ends here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; //services &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;/tabs&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="middile-sec py-5" id="tabs">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-md-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="middile-inner-con">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="tab-main mx-auto">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <input id="tab1" type="radio" name="tabs" checked>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="tab1">Tab 1</label>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <input id="tab2" type="radio" name="tabs">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="tab2">Tab 2</label>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <input id="tab3" type="radio" name="tabs">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="tab3">Tab 3</label>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <section id="content1">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-lg-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <img src="images/img5.jpg" class="img-fluid" alt="mobile-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-lg-6  p-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p>Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,Donec malesuada ex sit amet pretium sid ornare. Nulla congue scelerisque tellus, utpretium nulla malesuada sedint.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <section id="content2">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-lg-6  p-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p>Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,Donec malesuada ex sit amet pretium sid ornare. Nulla congue scelerisque tellus, utpretium nulla malesuada sedint.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-lg-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <img src="images/img2.jpg" class="img-fluid" alt="mobile-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <section id="content3">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-lg-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <img src="images/img5.jpg" class="img-fluid" alt="mobile-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-lg-6 p-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p>Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,Donec malesuada ex sit amet pretium sid ornare. Nulla congue scelerisque tellus, utpretium nulla malesuada sedint.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;/tabs&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; /skills &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="skills-w3pvt py-5" id="skills">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-md-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-6 progress-content text-left">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="py-lg-3 px-lg-5 p-md-5 p-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="progress-w3ls mt-5">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="progress-one">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <h4 class="progress-wthree">Simple Websites</h4>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <div class="progress-one">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <h4 class="progress-wthree">Online Marketing</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="progress-one">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <h4 class="progress-wthree">Social Media</h4>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="progress-one">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <h4 class="progress-wthree">24/7 support</h4>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-6 progress-content-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h3 class="title-w3ls mb-3">Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="images/img4.jpg" alt="" class="img-fluid image1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="mt-3"> Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,Donec malesuada ex sit amet pretium sid ornare. Nulla congue scelerisque tellus.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; /skills &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;//team &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="banner-bottom py-lg-5 py-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row mt-lg-5 mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-md-4 team-gd text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="team-img mb-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="images/team1.jpg" class="img-fluid" alt="user-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="team-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Agent</span> Jason Donoghue</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ul class="list-unstyled team-icons mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-facebook-f"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-twitter"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-dribbble"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="col-md-4 team-gd second text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="team-img mb-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="images/team2.jpg" class="img-fluid" alt="user-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="team-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Agent</span> Mariana Noe</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ul class="list-unstyled team-icons mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-facebook-f"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-twitter"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-dribbble"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-md-4 team-gd text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="team-img mb-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="images/team3.jpg" class="img-fluid" alt="user-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="team-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Agent</span> Daniel Doe</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Lorem Ipsum has been the industry's standard since the 1500s.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ul class="list-unstyled team-icons mt-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-facebook-f"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-twitter"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="t-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-dribbble"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;//team &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;/testimonials &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="testimonials-content">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container-fluid">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="col-md-6 test-grid text-center p-0">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="testi-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="fa fa-quote-left"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Lorem Ipsum has been the industry's standard since the 1500s.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h4 class="mt-md-4 mt-3"> Mariana Noe</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Ipsum dolor</p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-md-6 test-grid test-grid-two text-center p-0">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="testi-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="fa fa-quote-left"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Lorem Ipsum has been the industry's standard since the 1500s.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h4 class="mt-md-4 mt-3"> Daniel Doe</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Ipsum dolor</p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    &lt;!&ndash;//testimonials &ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;    &lt;!&ndash;/buttons &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="banner-bottom py-5 ">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-md-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3 class="title-w3ls mb-5 text-center">Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="d-flex mt-5 justify-content-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="layout1.html" class="btn button-style  mr-3">Layouts</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="contact.html" class="btn button-style">Contact Us</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash;//buttons &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; contact &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="contact py-5" id="contact">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container py-lg-5">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3 class="title-w3ls two text-center">Contact Info</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="main_p4 mt-4 mb-4 pt-2 text-center mx-auto">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum,</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row contact-top">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-6 contact_grid_left">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="list-unstyled wthreem-items">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-home"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-9">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h6>Address</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p>The company name&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <br>5768 Morris Park,&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <br>New York City. </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <li class="mt-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-envelope"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-9">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h6>Email</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="mailto:info@example.com">mail@example.com</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="mt-5">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="fa fa-phone"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-9">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h6>Phone</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p>1234567890</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-lg-6 contact_grid_right">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <form action="#" method="post">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="row contact_top">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input type="text" class="form-control" name="Name" placeholder="Name" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input type="email" class="form-control" name="Email" placeholder="Email" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <textarea class="form-control" name="Message" placeholder="" required=""></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button type="submit" class="btn submit">Submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button type="reset" class="btn reset">Reset</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="clearfix"> </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </form>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; //contact &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="copy-right">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="copy-right-grids text-md-left text-center my-sm-4 my-4 col-md-6">© 2019 Norm. All Rights Reserved | Design by&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="http://w3layouts.com/"> W3layouts </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="w3pvt-footer text-md-right text-center mt-4 col-md-5">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="list-unstyled w3pvt-icons">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <span class="fa fa-facebook-f"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <span class="fa fa-twitter"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <span class="fa fa-dribbble"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <span class="fa fa-vk"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="move-top text-right col-md-1"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--</body>-->
+
+<!--</html>-->
